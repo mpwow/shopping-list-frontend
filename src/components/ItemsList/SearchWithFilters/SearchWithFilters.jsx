@@ -59,25 +59,27 @@ export default function SearchWithFilters() {
                 }} type="text" placeholder="Search..."/>
                 <button onClick={resetHandler} className={styles.closeButton}>×</button>
             </div>}
-            {isBulkActionsShowed && <div className={styles.bulkActionsContainer}>
-                <div className={styles.bulkActionsControls}>
-                    <button onClick={selectAllBulkActions}>
-                        <span>Select All</span>
-                    </button>
-                    <button onClick={checkAllBulkActions}>
-                        <span>Check As Complete</span>
-                    </button>
-                    <button onClick={deleteBulkActions}>
-                        <span>Delete</span>
-                    </button>
-                </div>
-                <div className={styles.bulkActionsClose}>
-                    <button onClick={closeBulkActions}>
-                        Close Bulk Actions
-                    </button>
-                </div>
+            <div className={styles.bulkActionsPlaceReserver}>
+                {isBulkActionsShowed && <div className={styles.bulkActionsContainer}>
+                    <div className={styles.bulkActionsControls}>
+                        <button onClick={selectAllBulkActions}>
+                            <span>Select All</span>
+                        </button>
+                        <button onClick={checkAllBulkActions}>
+                            <span>Check As Complete</span>
+                        </button>
+                        <button onClick={deleteBulkActions}>
+                            <span>Delete</span>
+                        </button>
+                    </div>
+                    <div className={styles.bulkActionsClose}>
+                        <button onClick={closeBulkActions}>
+                            Close Bulk Actions
+                        </button>
+                    </div>
 
-            </div>}
+                </div>}
+            </div>
         </div>
     )
 }

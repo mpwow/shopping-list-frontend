@@ -114,14 +114,18 @@
   justify-content: center;
 }
 
-.bulkActionsContainer {
+.bulkActionsPlaceReserver {
   margin-top: 0.5rem;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
   background: var(--input-bg-color);
   padding: 0 0.5rem;
   border-radius: 0.5rem;
+  min-height: 2.2rem;
+}
+
+.bulkActionsContainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 
   .bulkActionsClose {
     color: var(--text-color);
