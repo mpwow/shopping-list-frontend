@@ -39,6 +39,12 @@
       border-bottom: 2px solid var(--accent-color);
       font-weight: 600;
     }
+
+    &.searchButton {
+      border-radius: 50%;
+      height: 2.5rem;
+      background: var(--theme-icon-bg);
+    }
   }
 
   .searchButton {
@@ -61,31 +67,24 @@
 }
 
 .searchBar{
-  margin: 0.5rem 0;
+  margin-top: 0.5rem;
   width: 100%;
   position: relative;
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
-  padding: 0.5rem;
 }
 
 .searchBarIcon {
   color: var(--text-color);
 }
-
-.searchButton {
-  border-radius: 50%;
-  height: 2.5rem;
-}
-
 .searchBar input{
   background: var(--input-bg-color);
   box-sizing: border-box;
   width: 100%;
   padding: 0.5rem;
-  padding-left: 2rem;
+  padding-left: 2.5rem;
   border-radius: 0.5rem;
   color: var(--text-color);
   border: none;
