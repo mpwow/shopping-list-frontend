@@ -31,10 +31,10 @@ export default function ShoppingItem({shoppingItem}) {
                 <span className={valueStyles}>{shoppingItem.value}</span>
             </div>
             <div className={styles.buttons}>
-                <button onClick={completeHandler}>
+                <button className={valueStyles} onClick={completeHandler}>
                     <CheckIcon/>
                 </button>
-                <button onClick={deleteHandler}>
+                <button className={valueStyles} onClick={deleteHandler}>
                     <DeleteIcon/>
                 </button>
             </div>

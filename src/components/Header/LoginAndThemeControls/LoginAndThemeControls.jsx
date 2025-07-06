@@ -1,6 +1,8 @@
 import styles from "./LoginAndThemeControls.module.scss";
 import { ThemeContext } from "../../../contexts/ThemeContext";
 import {useContext} from "react";
+import LightThemeIcon from "../../UI/Icons/LightThemeIcon/LightThemeIcon.jsx";
+import DarkThemeIcon from "../../UI/Icons/DarkThemeIcon/DarkThemeIcon.jsx";
 
 export default function LoginAndThemeControls() {
 
@@ -8,10 +10,10 @@ export default function LoginAndThemeControls() {
 
     return (<>
         <div className={styles.loginAndThemeControlsContainer}>
-            <button onClick={toggleTheme}>
-                Change Theme
+            <button onClick={toggleTheme} className={styles.themeSwitcher}>
+                {theme === 'light' ? <LightThemeIcon /> : <DarkThemeIcon />}
             </button>
-            <button>
+            <button className={styles.login}>
                 Sign In
             </button>
         </div>

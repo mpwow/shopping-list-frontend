@@ -25,14 +25,14 @@ export default function AddItemForm() {
                 id="shoppingItem"
                 ref={inputRef}
                 type="text"
-                placeholder="Write Shopping Item..."
+                placeholder="I need to buy..."
                 value={item}
                 onChange={(event) => setItem(event.target.value)}
             />
             <button
                 disabled={item.length === 0}
                 type="submit">
-                Add Item
+                Add
             </button>
         </form>
     )

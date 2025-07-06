@@ -1,21 +1,27 @@
 :root {
-  --bg-color: antiquewhite;
+  --bg-color: #FFFFFF;
   --text-color: black;
-  --input-bg-color: white;
+  --input-bg-color: #f5f5f5;
   --button-bg-color: white;
   --add-button-text-color: white;
-  --accent-color: green;
-  --placeholder-text-color: black;
+  --accent-color: #0871e7;
+  --placeholder-text-color: #5a5655;
   --hover-color: white;
+  --done-item: #999;
+  --item-background-color: #fcfcfc;
+  --theme-icon-bg:  #f5f5f5;
 }
 
 [data-theme="dark"] {
   --bg-color: black;
   --text-color: white;
-  --input-bg-color: gray;
+  --input-bg-color: #1c1d1c;
   --button-bg-color: black;
-  --add-button-text-color: black;
-  --accent-color: red;
-  --placeholder-text-color: white;
+  --add-button-text-color: white;
+  --accent-color: #0871e7;
+  --placeholder-text-color: #5a5655;
   --hover-color: darkgray;
+  --done-item: #999;
+  --item-background-color: #1c1d1c;
+  --theme-icon-bg:  #1c1d1c;
 }
