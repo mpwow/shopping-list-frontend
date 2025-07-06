@@ -22,22 +22,27 @@ export default function ShoppingItem({shoppingItem}) {
     }
 
     return (
-        <li className={styles.item}>
-            <input className={`${styles.actionCheckbox} ${checkedItems.includes(shoppingItem.id) ? styles.actionCheckboxVisible : ''} `}
-                   onClick={checkItemHandler} checked={checkedItems.includes(shoppingItem.id)}
-                   type="checkbox"
-            />
-            <div className={styles.title}>
-                <span className={valueStyles}>{shoppingItem.value}</span>
+        <li className={`${styles.item} ${checkedItems.includes(shoppingItem.id) ? styles.actionCheckboxVisible : ''}`} onClick={checkItemHandler}>
+            <div className={styles.itemContent}>
+                <input
+                    className={`${styles.actionCheckbox}`}
+                     checked={checkedItems.includes(shoppingItem.id)}
+                    type="checkbox"
+                />
+                <div className={styles.title}>
+                    <span className={valueStyles}>{shoppingItem.value}</span>
+                </div>
+                <div className={styles.buttons}>
+                    <button className={valueStyles} onClick={completeHandler}>
+                        <CheckIcon/>
+                    </button>
+                    <button className={valueStyles} onClick={deleteHandler}>
+                        <DeleteIcon/>
+                    </button>
+                </div>
             </div>
-            <div className={styles.buttons}>
-                <button className={valueStyles} onClick={completeHandler}>
-                    <CheckIcon/>
-                </button>
-                <button className={valueStyles} onClick={deleteHandler}>
-                    <DeleteIcon/>
-                </button>
-            </div>
+
+            <progress value={3}/>
         </li>
     );
 }

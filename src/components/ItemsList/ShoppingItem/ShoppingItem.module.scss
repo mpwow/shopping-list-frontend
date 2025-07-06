@@ -1,23 +1,42 @@
 @use "../../../styles/_variables.scss" as *;
 
+
 .item {
-  border: none;
-  padding: 1rem 1rem 1rem 1.5rem;
+  display: flex;
+  gap: 0.5rem;
+  flex-direction: column;
+  padding: 2rem 1rem 0.25rem 1rem;
   border-radius: 0.75rem;
+  background: var(--item-background-color);
+  border: 2px solid transparent;
+
+  &:hover {
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    background: var(--hover-color);
+  }
+
+  &:hover .actionCheckbox {
+    visibility: visible;
+  }
+
+  &.actionCheckboxVisible {
+    border: 2px solid var(--item-check-color);
+  }
+
+  progress {
+    width: 100%;
+  }
+}
+
+.itemContent {
   font-size: 1.25rem;
   display: flex;
-  background: var(--item-background-color);
   justify-content: space-between;
   align-items: center;
   transition: all 0.3s ease;
   box-sizing: border-box;
   position: relative;
   box-shadow: 2px 3px 8px rgba(0, 0, 0, 0.08);
-
-  &:hover {
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-    background: var(--hover-color);
-  }
 
   &:hover .actionCheckbox {
     visibility: visible;
@@ -32,6 +51,7 @@
 
 .actionCheckbox {
   appearance: none;
+  display: none;
   width: 1.25rem;
   height: 1.25rem;
   border-radius: 4px;
@@ -42,6 +62,7 @@
   position: relative;
   cursor: pointer;
   visibility: hidden;
+  box-sizing: border-box;
 
   &:checked {
     background-color: #2962ff;
@@ -58,10 +79,6 @@
     border: solid white;
     border-width: 0 2px 2px 0;
     transform: rotate(45deg);
-  }
-
-  &.actionCheckboxVisible {
-    visibility: visible;
   }
 }
 
@@ -88,8 +105,8 @@
   button {
     border: none;
     background: none;
-    width: 2.5rem;
-    height: 2.5rem;
+    width: 2rem;
+    height: 2rem;
     border-radius: 50%;
     display: flex;
     align-items: center;
