@@ -31,11 +31,34 @@
 }
 
 .actionCheckbox {
-  position: absolute;
-  left: 0.25rem;
-  height: 1rem;
-  width: 1rem;
+  appearance: none;
+  width: 1.25rem;
+  height: 1.25rem;
+  border-radius: 4px;
+  margin-right: 0.75rem;
+  border: 2px solid #c7c7c7;
+  background-color: transparent;
+  transition: all 0.2s ease;
+  position: relative;
+  cursor: pointer;
   visibility: hidden;
+
+  &:checked {
+    background-color: #2962ff;
+    border: none;
+  }
+
+  &:checked::after {
+    content: "";
+    position: absolute;
+    top: 4px;
+    left: 8px;
+    width: 5px;
+    height: 9px;
+    border: solid white;
+    border-width: 0 2px 2px 0;
+    transform: rotate(45deg);
+  }
 
   &.actionCheckboxVisible {
     visibility: visible;
