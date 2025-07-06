@@ -97,13 +97,14 @@
     cursor: pointer;
     transition: all 0.2s ease;
     padding: 0;
+    opacity: 0.9;
 
     &.itemDone {
       opacity: 0.5;
     }
 
     &:hover {
-      background: var(--hover-color);
+      opacity: 1;
     }
 
     &:active {
