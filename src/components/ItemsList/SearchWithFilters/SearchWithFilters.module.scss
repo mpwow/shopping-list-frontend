@@ -1,0 +1,156 @@
+@use "../../../styles/_variables.scss" as *;
+
+.searchAndFiltersContainer {
+  position: sticky;
+  top: 0;
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 0.5rem 0;
+  background: var(--bg-color);
+}
+
+.searchAndFiltersBar {
+  display: flex;
+  justify-content: space-between;
+
+  button {
+    color: var(--text-color);
+    background-color: transparent;
+    border: 1px solid var(--text-color);
+    border-radius: 0.5rem;
+    padding: 0.5rem;
+    min-width: 80px;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    font-size: 0.75rem;
+
+    &:hover {
+      background: var(--hover-color);
+    }
+
+    &:active {
+      transform: scale(0.95);
+    }
+    &:focus{
+      outline: none;
+    }
+
+    &.activeButton {
+      background-color: var(--input-bg-color);
+    }
+  }
+
+  .searchButton {
+    border: 1px solid var(--text-color);
+    width: 2.5rem;
+    border-radius: 25%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    padding: 0;
+    min-width: 0;
+  }
+}
+
+.filtersBar {
+  display: flex;
+  gap: 1rem;
+}
+
+.searchBar{
+  margin: 0.5rem 0;
+  width: 100%;
+  position: relative;
+}
+
+.searchBarIcon {
+  color: var(--text-color);
+}
+
+.searchButton {
+  border-radius: 50%;
+  height: 2.5rem;
+}
+
+.searchBar input{
+  background: var(--input-bg-color);
+  box-sizing: border-box;
+  width: 100%;
+  padding: 0.5rem;
+  padding-left: 2rem;
+  border-radius: 0.5rem;
+  color: var(--text-color);
+
+  &::placeholder {
+    color: var(--placeholder-text-color);
+  }
+
+  &:focus{
+    outline: none;
+  }
+}
+
+.closeButton {
+  color: var(--text-color);
+  background-color: transparent;
+  border: 1px solid var(--text-color);
+  width: 1.5rem;
+  height: 1.5rem;
+  border-radius: 50%;
+  position: absolute;
+  top: 15%;
+  left: 1%;
+  cursor: pointer;
+  opacity: 75%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.bulkActionsContainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  .bulkActionsClose {
+    color: var(--text-color);
+
+    button {
+      border: none;
+      background: none;
+      font-size: 0.8rem;
+    }
+  }
+}
+
+.bulkActionsControls {
+  display: flex;
+  flex-direction: row;
+  padding: 0.5rem 0;
+  gap: 1rem;
+
+  button {
+    background: none;
+    border: none;
+    font-size: 0.8rem;
+    cursor: pointer;
+  }
+
+  button:nth-child(1) {
+    color: var(--text-color);
+  }
+
+  button:nth-child(2) {
+    color: green;
+  }
+
+  button:nth-child(3) {
+    color: red;
+  }
+
+}
+

@@ -1,0 +1,21 @@
+:root {
+  --bg-color: antiquewhite;
+  --text-color: black;
+  --input-bg-color: white;
+  --button-bg-color: white;
+  --add-button-text-color: white;
+  --accent-color: green;
+  --placeholder-text-color: black;
+  --hover-color: white;
+}
+
+[data-theme="dark"] {
+  --bg-color: black;
+  --text-color: white;
+  --input-bg-color: gray;
+  --button-bg-color: black;
+  --add-button-text-color: black;
+  --accent-color: red;
+  --placeholder-text-color: white;
+  --hover-color: darkgray;
+}

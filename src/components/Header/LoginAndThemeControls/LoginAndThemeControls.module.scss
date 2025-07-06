@@ -1,0 +1,32 @@
+@use "../../../styles/_variables.scss" as *;
+
+.loginAndThemeControlsContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+
+  button {
+    font-size: 0.75rem;
+    color: var(--text-color);
+    border: 1px solid var(--text-color);
+    background-color: transparent;
+    border-radius: 0.5rem;
+    min-width: 80px;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    min-height: 0;
+    padding: 0.5rem;
+
+    &:hover {
+      background: var(--hover-color);
+    }
+
+    &:active {
+      transform: scale(0.95);
+    }
+    &:focus{
+      outline: none;
+    }
+  }
+}
+

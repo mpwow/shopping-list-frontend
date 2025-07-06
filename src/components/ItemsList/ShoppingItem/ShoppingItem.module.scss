@@ -1,0 +1,80 @@
+@use "../../../styles/_variables.scss" as *;
+
+.item {
+  border: 2px solid var(--text-color);
+  padding: 1rem 1rem 1rem 1.5rem;
+  border-radius: 0.25rem;
+  font-size: 1.25rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center; 
+  transition: all 0.3s ease;
+  box-sizing: border-box;
+  position: relative;
+
+  &:hover {
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    background: var(--hover-color);
+  }
+
+  &:hover .actionCheckbox{
+    visibility: visible;
+  }
+}
+
+.itemDone{
+  text-decoration: line-through;
+  text-decoration-thickness: 2px;
+}
+
+.actionCheckbox {
+  position: absolute;
+  left: 0.25rem;
+  height: 1rem;
+  width: 1rem;
+  visibility: hidden;
+
+  &.actionCheckboxVisible {
+    visibility: visible;
+  }
+}
+
+
+
+.title {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  flex: 1;
+}
+
+.buttons {
+  display: flex;
+  gap: 1rem;
+
+  button {
+    border: 1px solid var(--text-color);
+    background: none;
+    width: 2.5rem;
+    height: 2.5rem;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    padding: 0;
+
+    &:hover {
+      background: var(--hover-color);
+    }
+
+    &:active {
+      transform: scale(0.95);
+    }
+    &:focus{
+      outline: none;
+    }
+  }
+
+}

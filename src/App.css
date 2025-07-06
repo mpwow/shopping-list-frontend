@@ -1,0 +1,19 @@
+.wrapper {
+  display: flex;
+  flex-direction: column;      /* размещение по вертикали */
+  justify-content: center;     /* по вертикали */
+  align-items: center;         /* по горизонтали */
+  height: 100vh;           /* высота экрана */
+  background: linear-gradient(135deg, #00c9a7, #845ec2); /* красивый фон */
+  gap: 1rem;
+  /* расстояние между блоками */
+  padding: 1rem;
+}
+
+@media (max-width: 480px) {
+  .wrapper {
+    padding: 0.25rem;
+    gap: 0.5rem;
+    justify-content: flex-start; /* Контент прижимаем к верху */
+  }
+}

@@ -1,0 +1,19 @@
+@use "../../styles/_variables.scss" as *;
+
+.header {
+  background-color: var(--bg-color);
+  padding: 1rem;
+  border-radius: 0.25rem;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 500px;
+  max-height: fit-content;
+  text-align: center;
+  flex: 1;
+
+  h1 {
+    color: var(--text-color);
+    font-size: 2rem;
+  }
+}
+
