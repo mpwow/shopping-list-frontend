@@ -1,0 +1,10 @@
+node_modules
+dist
+build
+*.md
+*.svg
+*.eot
+*.ttf
+*.woff
+*.woff2
+public

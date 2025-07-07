@@ -1,4 +1,4 @@
-@use "../../styles/_variables.scss" as *;
+@use '../../styles/_variables.scss' as *;
 
 .header {
   background-color: var(--bg-color);
@@ -19,4 +19,3 @@
     letter-spacing: 0.35rem;
   }
 }
-

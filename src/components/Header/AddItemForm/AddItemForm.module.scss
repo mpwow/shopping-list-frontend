@@ -1,5 +1,4 @@
-@use "../../../styles/_variables.scss" as *;
-
+@use '../../../styles/_variables.scss' as *;
 
 .addItemForm {
   display: flex;
@@ -35,7 +34,3 @@
     min-width: 120px;
   }
 }
-
-
-
-

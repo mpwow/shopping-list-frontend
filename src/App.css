@@ -1,9 +1,9 @@
 .wrapper {
   display: flex;
-  flex-direction: column;      /* размещение по вертикали */
-  justify-content: center;     /* по вертикали */
-  align-items: center;         /* по горизонтали */
-  height: 100vh;           /* высота экрана */
+  flex-direction: column; /* размещение по вертикали */
+  justify-content: center; /* по вертикали */
+  align-items: center; /* по горизонтали */
+  height: 100vh; /* высота экрана */
   background: linear-gradient(135deg, #00c9a7, #845ec2); /* красивый фон */
   /* расстояние между блоками */
   padding: 1rem;

@@ -1,5 +1,4 @@
-@use "../../../styles/_variables.scss" as *;
-
+@use '../../../styles/_variables.scss' as *;
 
 .item {
   display: flex;
@@ -71,7 +70,7 @@
   }
 
   &:checked::after {
-    content: "";
+    content: '';
     position: absolute;
     top: 4px;
     left: 8px;
@@ -82,7 +81,6 @@
     transform: rotate(45deg);
   }
 }
-
 
 .title {
   overflow: hidden;
@@ -97,7 +95,7 @@
 
   button:nth-child(1) {
     background-color: #18be7c;
-}
+  }
 
   button:nth-child(2) {
     background-color: #f73939;
@@ -133,5 +131,4 @@
       outline: none;
     }
   }
-
 }

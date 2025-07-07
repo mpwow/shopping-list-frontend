@@ -1,4 +1,4 @@
-@use "../../../styles/_variables.scss" as *;
+@use '../../../styles/_variables.scss' as *;
 
 .loginAndThemeControlsContainer {
   display: flex;
@@ -21,7 +21,7 @@
     height: 40px;
   }
 
-  .login{
+  .login {
     border: none;
     background: none;
     color: var(--accent-color);
@@ -31,9 +31,8 @@
     &:active {
       transform: scale(0.95);
     }
-    &:focus{
+    &:focus {
       outline: none;
     }
   }
 }
-
