@@ -43,8 +43,6 @@ export default function ShoppingItem({ shoppingItem }) {
           </button>
         </div>
       </div>
-
-      <progress value={3} />
     </li>
   );
 }
